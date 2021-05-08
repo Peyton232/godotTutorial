@@ -1,3 +1,167 @@
-[gd_scene format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://lava.tscn" type="PackedScene" id=3]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://score.tscn" type="PackedScene" id=5]
+[ext_resource path="res://main.gd" type="Script" id=6]
 
 [node name="MainScene" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 32, 488 )
+
+[node name="Tile" parent="." instance=ExtResource( 2 )]
+position = Vector2( 32, 568 )
+
+[node name="Tile18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 288, 440 )
+
+[node name="Tile19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 480, 440 )
+
+[node name="Tile20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 544, 440 )
+
+[node name="Tile21" parent="." instance=ExtResource( 2 )]
+position = Vector2( 864, 224 )
+
+[node name="Tile30" parent="." instance=ExtResource( 2 )]
+position = Vector2( 672, 96 )
+
+[node name="StaticBody2D2" parent="Tile30" instance=ExtResource( 3 )]
+position = Vector2( -448, 344 )
+
+[node name="Tile35" parent="." instance=ExtResource( 2 )]
+position = Vector2( 288, 96 )
+
+[node name="Tile36" parent="." instance=ExtResource( 2 )]
+position = Vector2( 488, 96 )
+
+[node name="Tile22" parent="." instance=ExtResource( 2 )]
+position = Vector2( 544, 504 )
+
+[node name="Tile23" parent="." instance=ExtResource( 2 )]
+position = Vector2( 608, 504 )
+
+[node name="Tile24" parent="." instance=ExtResource( 2 )]
+position = Vector2( 856, 504 )
+
+[node name="Tile25" parent="." instance=ExtResource( 2 )]
+position = Vector2( 992, 416 )
+
+[node name="Tile26" parent="." instance=ExtResource( 2 )]
+position = Vector2( 480, 376 )
+
+[node name="Tile27" parent="." instance=ExtResource( 2 )]
+position = Vector2( 480, 504 )
+
+[node name="Tile28" parent="." instance=ExtResource( 2 )]
+position = Vector2( 288, 376 )
+
+[node name="Tile29" parent="." instance=ExtResource( 2 )]
+position = Vector2( 224, 440 )
+
+[node name="Tile31" parent="." instance=ExtResource( 2 )]
+position = Vector2( 160, 504 )
+
+[node name="Tile32" parent="." instance=ExtResource( 2 )]
+position = Vector2( 224, 504 )
+
+[node name="Tile33" parent="." instance=ExtResource( 2 )]
+position = Vector2( 288, 504 )
+
+[node name="Tile2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 96, 568 )
+
+[node name="Tile3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 160, 568 )
+
+[node name="Tile4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 224, 568 )
+
+[node name="Tile5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 288, 568 )
+
+[node name="Tile8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 480, 568 )
+
+[node name="Tile9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 544, 568 )
+
+[node name="Tile10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 608, 568 )
+
+[node name="Tile11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 672, 568 )
+
+[node name="Tile12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 736, 568 )
+
+[node name="Tile13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 792, 568 )
+
+[node name="Tile14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 856, 568 )
+
+[node name="Tile15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 920, 568 )
+
+[node name="Tile16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 984, 568 )
+
+[node name="Tile17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1048, 568 )
+
+[node name="lava1" parent="." groups=[
+"hazard",
+] instance=ExtResource( 3 )]
+position = Vector2( 352, 568 )
+
+[node name="lava2" parent="." groups=[
+"hazard",
+] instance=ExtResource( 3 )]
+position = Vector2( 416, 568 )
+
+[node name="lava3" parent="." groups=[
+"hazard",
+] instance=ExtResource( 3 )]
+position = Vector2( -152, 632 )
+rotation = 6.28319
+scale = Vector2( 90, 1 )
+
+[node name="coin1" parent="." groups=[
+"coin",
+] instance=ExtResource( 4 )]
+position = Vector2( 288, 296 )
+
+[node name="coin2" parent="." groups=[
+"coin",
+] instance=ExtResource( 4 )]
+position = Vector2( 480, 296 )
+
+[node name="coin3" parent="." groups=[
+"coin",
+] instance=ExtResource( 4 )]
+position = Vector2( 288, 32 )
+
+[node name="coin4" parent="." groups=[
+"coin",
+] instance=ExtResource( 4 )]
+position = Vector2( 480, 24 )
+
+[node name="coin5" parent="." groups=[
+"coin",
+] instance=ExtResource( 4 )]
+position = Vector2( 672, 32 )
+
+[node name="coin6" parent="." groups=[
+"coin",
+] instance=ExtResource( 4 )]
+position = Vector2( 992, 328 )
+
+[node name="Control" parent="." instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
